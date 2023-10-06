@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Fragment.FrgChangePass">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐỔI MẬT KHẨU"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:textColor="#0C79D0"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/key_blue"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mật khẩu cũ"
+            android:inputType="textPassword"
+            android:id="@+id/txtPassOld"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mật khẩu mới"
+            android:inputType="textPassword"
+            android:id="@+id/txtNewPass"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:id="@+id/txtRepass"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:drawableStart="@drawable/ic_baseline_save_24"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF5722"
+            android:id="@+id/change_btnLuu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_baseline_cancel_24"
+            android:text="Hủy"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF5722"
+            android:id="@+id/change_btnHuy"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

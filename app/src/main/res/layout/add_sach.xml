@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SÁCH"
+        android:textSize="30sp"
+        android:textColor="#E91E63"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTenS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên sách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá thuê"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnLS"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSoLuongSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng sách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/btnAddS"
+            android:text="Lưu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnHuyS"
+            android:text="hủy"/>
+
+    </LinearLayout>
+</LinearLayout>
