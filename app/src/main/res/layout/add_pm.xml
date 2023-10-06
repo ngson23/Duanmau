@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_pm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM PHIẾU MƯỢN"
+        android:textSize="30sp"
+        android:textColor="#E91E63"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên thành viên"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pm_spTV"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sách"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pm_spTenS"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/ivDate"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
+       >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNgay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đã trả sách"
+        android:layout_margin="10dp"
+        android:id="@+id/chkTraS"/>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/btnAddPM"
+            android:text="Lưu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnHuyPM"
+            android:text="hủy"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

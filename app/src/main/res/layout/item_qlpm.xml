@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E68181"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mapm"
+                android:textSize="14sp"
+                android:id="@+id/tvMaPM"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tentv"
+                android:textSize="20sp"
+                android:id="@+id/tvTentv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tên sách"
+                android:textSize="20sp"
+                android:id="@+id/pm_tvTenS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giá tiền"
+                android:textSize="20sp"
+                android:id="@+id/tvTien"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="trạng thái"
+                android:textSize="20sp"
+                android:id="@+id/tvTraS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ngày mượn: 22-02-2018"
+                android:textSize="14dp"
+                android:id="@+id/tvNgay"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivXoaPM"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_baseline_delete_forever_24" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

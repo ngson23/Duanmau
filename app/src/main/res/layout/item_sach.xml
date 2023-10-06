@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#7CBDEF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMaS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mã sách"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sách"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvGiaS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá thuê"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvLoaiS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="loại"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSoLuongSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số Lượng"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivXoa_sach"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_delete_forever_24"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
